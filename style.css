@@ -10,6 +10,7 @@
     --neon-yellow: #ffe23e;
     --neon-purple: #a82dff;
     --neon-green: #2dff9f;
+    --neon-maroon: #b22222;
     --bg-dark: #07040f;
     --text: #f7f7ff;
 }
@@ -29,7 +30,7 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 1px;
 }
 
-p {
+p,label,li,a{
 
     font-family: 'Orbitron', monospace;    
 
@@ -52,8 +53,13 @@ p {
 .navbar {
     background: rgba(5, 0, 15, 0.85) !important;
     backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(45, 252, 255, 0.2);
-    box-shadow: 0 4px 20px rgba(45, 252, 255, 0.1);
+    border-bottom: 2px solid var(--neon-cyan);
+    box-shadow: 0 0 15px rgba(45, 252, 255, 0.6);
+    transition: transform 0.3s ease;
+}
+
+.navbar-hidden {
+    transform: translateY(-100%);
 }
 
 .navbar-brand {
@@ -219,6 +225,7 @@ p {
 }
 
 .border-top-neon {
-    border-top: 1px solid rgba(45, 252, 255, 0.2);
+    border-top: 2px solid var(--neon-pink);
     background: rgba(5, 0, 15, 0.9);
+    box-shadow: 0 0 15px rgba(255, 45, 149, 0.6);
 }

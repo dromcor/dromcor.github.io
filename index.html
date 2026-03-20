@@ -196,8 +196,8 @@
             <h2 class="neon-border-bottom pb-2 mb-4">Contacto</h2>
             <div class="alert neon-alert d-flex align-items-center mb-4" role="alert">
                 <i class="bi bi-terminal-dash fs-4 me-3"></i>
-                <div>¿Tienes una propuesta o quieres que colaboremos? No dudes en contactarme rellenando el formulario!
-                </div>
+                <p>¿Tienes una propuesta o quieres que colaboremos? No dudes en contactarme rellenando el formulario!
+                </p>
             </div>
             <div class="card neon-card">
                 <div class="card-body p-4">
@@ -247,14 +247,30 @@
         <div class="container">
             <p class="mb-0 text-white-50">&copy; 2026 Diego Romero Corredera | Desarrollado para EPD2</p>
             <div class="d-flex justify-content-center mt-3">
-                <a href="" class="text-white me-3 fs-4 social-icon"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="text-white me-3 fs-4 social-icon"><i class="bi bi-twitter-x"></i></a>
-                <a href="#" class="text-white fs-4 social-icon"><i class="bi bi-github"></i></a>
+                <a href="https://www.instagram.com/diiegoromero_12/" class="text-white me-3 fs-4 social-icon"><i class="bi bi-instagram"></i></a>
+                <a href="https://x.com/diiegoromero_12" class="text-white me-3 fs-4 social-icon"><i class="bi bi-twitter-x"></i></a>
+                <a href="https://github.com/dromcor" class="text-white fs-4 social-icon"><i class="bi bi-github"></i></a>
             </div>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        let lastScrollTop = 0;
+        const navbar = document.querySelector('.navbar');
+
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop && scrollTop > 100) {
+                // Scrolling down and past 100px
+                navbar.classList.add('navbar-hidden');
+            } else {
+                // Scrolling up
+                navbar.classList.remove('navbar-hidden');
+            }
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+        });
+    </script>
 </body>
 
 </html>
