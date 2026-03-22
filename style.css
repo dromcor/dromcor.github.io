@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 1px;
 }
 
-p,label,li,a{
+p,label,li,a,button{
 
     font-family: 'Orbitron', monospace;    
 
@@ -141,7 +141,7 @@ p,label,li,a{
   text-shadow: 0 0 5px #fff;
 }
 
-/* Opcional: quitar el borde azul de enfoque de Chrome */
+
 .btn-neon-red:focus {
   box-shadow: 0 0 20px #ff3131;
   outline: none;
@@ -168,7 +168,7 @@ p,label,li,a{
 .icon-neon-cyan { color: var(--neon-cyan); text-shadow: 0 0 15px rgba(45, 252, 255, 0.6); }
 .icon-neon-green { color: var(--neon-green); text-shadow: 0 0 15px rgba(45, 255, 159, 0.6); }
 
-/* BADGES (Etiquetas) */
+/* BADGES*/
 .neon-badge {
     background: rgba(168, 45, 255, 0.2) !important;
     color: var(--neon-purple);
@@ -228,4 +228,24 @@ p,label,li,a{
     border-top: 2px solid var(--neon-pink);
     background: rgba(5, 0, 15, 0.9);
     box-shadow: 0 0 15px rgba(255, 45, 149, 0.6);
+}
+
+/* MODALES */
+.neon-modal .modal-content {
+    background: rgba(20, 10, 40, 0.9) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(10px);
+    color: var(--text);
+}
+
+.neon-modal .modal-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.neon-modal .modal-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.neon-modal .modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.8);
 }
