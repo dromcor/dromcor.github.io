@@ -230,6 +230,29 @@ p,label,li,a,button{
     box-shadow: 0 0 15px rgba(255, 45, 149, 0.6);
 }
 
+.social-icon {
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+    transform: scale(1.25);
+}
+
+.social-icon:hover .bi-instagram {
+    color: #E4405F !important;
+    text-shadow: 0 0 12px #E4405F;
+}
+
+.social-icon:hover .bi-twitter-x {
+    color: #fff !important;
+    text-shadow: 0 0 12px #fff;
+}
+
+.social-icon:hover .bi-github {
+    color: #999 !important;
+    text-shadow: 0 0 12px #999;
+}
+
 /* MODALES */
 .neon-modal .modal-content {
     background: rgba(20, 10, 40, 0.9) !important;
